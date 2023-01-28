@@ -1,0 +1,11 @@
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\bin\Debug\net5.0\VeterinaryClinic.Common.deps.json
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\bin\Debug\net5.0\VeterinaryClinic.Common.dll
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\bin\Debug\net5.0\ref\VeterinaryClinic.Common.dll
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\bin\Debug\net5.0\VeterinaryClinic.Common.pdb
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.AssemblyInfoInputs.cache
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.AssemblyInfo.cs
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.csproj.CoreCompileInputs.cache
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.dll
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\ref\VeterinaryClinic.Common.dll
+D:\SisVeterinaria\repo\SisVeterinaria\VeterinaryClinic\VeterinaryClinic.Common\obj\Debug\net5.0\VeterinaryClinic.Common.pdb
