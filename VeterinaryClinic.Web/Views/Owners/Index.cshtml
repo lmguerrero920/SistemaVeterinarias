@@ -1,0 +1,59 @@
+﻿@model IEnumerable<VeterinaryClinic.Entities.Entities.Owner>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NameOwner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentOwner)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telphone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameOwner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DocumentOwner)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telphone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DocumentType.NameDocumentType)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdOwner">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdOwner">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdOwner">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

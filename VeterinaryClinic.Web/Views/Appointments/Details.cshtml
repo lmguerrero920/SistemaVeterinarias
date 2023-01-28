@@ -1,0 +1,54 @@
+﻿@model VeterinaryClinic.Entities.Entities.Appointment
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NameAppointment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NameAppointment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateStartAppointment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateStartAppointment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateEndAppointment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateEndAppointment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Employee)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Employee.NameEmployee)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Patient)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Patient.NamePatient)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Room)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Room.NameRoom)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdAppointment">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

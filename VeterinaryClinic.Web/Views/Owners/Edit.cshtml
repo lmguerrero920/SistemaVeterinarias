@@ -1,0 +1,54 @@
+﻿@model VeterinaryClinic.Entities.Entities.Owner
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Owner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdOwner" />
+            <div class="form-group">
+                <label asp-for="NameOwner" class="control-label"></label>
+                <input asp-for="NameOwner" class="form-control" />
+                <span asp-validation-for="NameOwner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DocumentOwner" class="control-label"></label>
+                <input asp-for="DocumentOwner" class="form-control" />
+                <span asp-validation-for="DocumentOwner" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telphone" class="control-label"></label>
+                <input asp-for="Telphone" class="form-control" />
+                <span asp-validation-for="Telphone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdDocumentType" class="control-label"></label>
+                <select asp-for="IdDocumentType" class="form-control" asp-items="ViewBag.IdDocumentType"></select>
+                <span asp-validation-for="IdDocumentType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

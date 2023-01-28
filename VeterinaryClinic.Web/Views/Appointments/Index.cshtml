@@ -1,0 +1,65 @@
+﻿@model IEnumerable<VeterinaryClinic.Entities.Entities.Appointment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NameAppointment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateStartAppointment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateEndAppointment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Employee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Room)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameAppointment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStartAppointment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateEndAppointment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Employee.NameEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.NamePatient)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Room.NameRoom)
+            </td>
+            <td> 
+                <a asp-action="Edit" asp-route-id="@item.IdAppointment" ,new {@class = "form-control round-input" } >Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdAppointment">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAppointment">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

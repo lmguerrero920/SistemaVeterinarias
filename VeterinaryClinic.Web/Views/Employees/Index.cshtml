@@ -1,0 +1,89 @@
+﻿@model IEnumerable<VeterinaryClinic.Entities.Entities.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NameEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentEmployee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idspecialty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telphone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateCreate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateUpdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DocumentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WorkStation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DocumentEmployee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idspecialty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telphone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateUpdate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DocumentType.NameDocumentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rol.NameRol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkStation.NameWorkStation)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdEmployee">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdEmployee">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdEmployee">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
